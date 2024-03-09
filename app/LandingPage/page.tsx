@@ -12,7 +12,7 @@ const page = () => {
 			<div className={styles.start}>
 				<span>Let&apos;s Learn JSON-Schema</span>
 
-				<Link href="/Platform/Learn">
+				<Link href="/Platform">
 					<Button variant={"default"} fontSize={"16px"}>
 						{" "}
 						Start Learning!

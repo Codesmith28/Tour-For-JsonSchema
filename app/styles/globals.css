@@ -20,9 +20,9 @@ body {
 	border-radius: 8px; /* Add rounded corners */
 }
 ::-webkit-scrollbar-track {
-	background: var(--chakra-colors-gray-800);
+	background: hsl(var(--background));
 }
 ::-webkit-scrollbar-thumb {
-	background: var(--chakra-colors-gray-600);
+	background: hsl(var(--secondary));
 	border-radius: 5px; /* Add rounded corners */
 }

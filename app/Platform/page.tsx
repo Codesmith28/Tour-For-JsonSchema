@@ -15,7 +15,7 @@ function Page() {
 					Problem statement here
 				</div>
 				<div className={styles.ide}>
-					<Ide />
+					<Ide code={code} setCode={setCode} />
 				</div>
 			</div>
 		</div>
