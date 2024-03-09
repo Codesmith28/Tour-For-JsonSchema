@@ -1,1 +1,28 @@
+/* color schemes: */
+:root {
+	--text: 247, 75%, 5%;
+	--text2: 0, 0%, 100%;
+	--background: 240, 60%, 99%;
+	--primary: 243, 68%, 48%;
+	--secondary: 243, 100%, 93%;
+	--accent: 242, 100%, 62%;
+}
 
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+}
+
+/* for the scroll bar */
+::-webkit-scrollbar {
+	width: 15px;
+	border-radius: 8px; /* Add rounded corners */
+}
+::-webkit-scrollbar-track {
+	background: var(--chakra-colors-gray-800);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--chakra-colors-gray-600);
+	border-radius: 5px; /* Add rounded corners */
+}
