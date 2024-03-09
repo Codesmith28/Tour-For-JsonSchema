@@ -1,5 +1,7 @@
 "use client";
-import Ide from "@/components/Ide/Ide";
+import FloatBtn from "@/components/FloatBtn";
+import Ide from "@/components/Ide";
+import Send from "@/public/icons/Send";
 import { useState } from "react";
 import styles from "./Platform.module.css";
 
@@ -17,6 +19,11 @@ function Page() {
 				<div className={styles.ide}>
 					<Ide code={code} setCode={setCode} />
 				</div>
+			</div>
+
+			{/* submit button */}
+			<div>
+				<FloatBtn />
 			</div>
 		</div>
 	);

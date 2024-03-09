@@ -20,6 +20,7 @@
 .problemStatement {
 	background-color: hsl(var(--secondary));
 	border-radius: 0 1em 1em 0;
+	border: 2px solid hsl(var(--text));
 }
 
 @media (max-width: 768px) {
