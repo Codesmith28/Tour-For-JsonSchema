@@ -1,20 +1,27 @@
 .main {
-  position: absolute;
-  background-color: hsl(var(--accent));
-  border: 2px solid hsl(var(--text));
-  border-radius: 1em;
-  bottom: 1em;
-  right: 1em;
-  padding: 0.5em;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
+	position: absolute;
+	background-color: hsl(var(--accent));
+	border: 2px solid hsl(var(--text));
+	border-radius: 1em;
+	bottom: 1em;
+	right: 1em;
+	padding: 0.5em;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	cursor: pointer;
+
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+	justify-content: center;
+	align-items: center;
+	color: hsl(var(--text2));
 }
 
 .main:hover {
-  background-color: hsl(var(--primary));
-  transform: scale(1.06);
+	background-color: hsl(var(--primary));
+	transform: scale(1.06);
 }
 
 .main:active {
-  transform: scale(0.9);
+	transform: scale(0.9);
 }
