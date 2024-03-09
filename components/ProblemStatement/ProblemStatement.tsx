@@ -19,14 +19,12 @@ import {
 const ProblemStatement = ({
 	round,
 	setRound,
-	open,
 	title,
 	desc,
 	hint,
 }: {
 	round: number;
 	setRound: React.Dispatch<React.SetStateAction<number>>;
-	open: boolean;
 	title: string;
 	desc: string;
 	hint: string;

@@ -44,7 +44,6 @@ const Page = () => {
 						hint={problemStatement.hint}
 						round={round}
 						setRound={setRound}
-						open={open}
 					/>
 				</div>
 
