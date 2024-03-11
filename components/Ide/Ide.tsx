@@ -5,6 +5,7 @@ import "ace-builds/src-noconflict/mode-javascript";
 import "ace-builds/src-noconflict/mode-json";
 import "ace-builds/src-noconflict/theme-textmate";
 import Ajv from "ajv/dist/2020";
+import { useRouter } from "next/navigation";
 import router from "next/router";
 import { useState } from "react";
 import AceEditor from "react-ace";
@@ -87,6 +88,8 @@ const Ide = ({
 	isInvalid: boolean;
 	setIsInvalid: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
+	const router = useRouter();
+
 	return (
 		<div className={styles.main}>
 			<div className={styles.editor}>
