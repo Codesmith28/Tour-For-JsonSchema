@@ -5,7 +5,7 @@ import "ace-builds/src-noconflict/mode-javascript";
 import "ace-builds/src-noconflict/mode-json";
 import "ace-builds/src-noconflict/theme-textmate";
 import Ajv from "ajv/dist/2020";
-import { redirect } from "next/navigation";
+import router from "next/router";
 import { useState } from "react";
 import AceEditor from "react-ace";
 import styles from "./Ide.module.css";
@@ -136,7 +136,7 @@ const Ide = ({
 							if (round < 2) {
 								setRound(round + 1);
 							} else if (round === 2) {
-								redirect("/Congratulations");
+								router.push("/Congratulations");
 							}
 							setCode("\n");
 							// reset the output window
