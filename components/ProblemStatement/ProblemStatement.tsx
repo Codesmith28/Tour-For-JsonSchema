@@ -15,6 +15,7 @@ import {
 	ChevronLeftIcon,
 	ChevronUpIcon,
 } from "@chakra-ui/icons";
+import { redirect, useRouter } from "next/navigation";
 import { CodeBlock, CopyBlock, github, googlecode } from "react-code-blocks";
 
 const ProblemStatement = ({
@@ -38,6 +39,8 @@ const ProblemStatement = ({
 	setValidity: React.Dispatch<React.SetStateAction<string>>;
 	setIsInvalid: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
+	const router = useRouter();
+
 	return (
 		<div className={styles.main}>
 			<div className={styles.prob}>
@@ -57,7 +60,7 @@ const ProblemStatement = ({
 							// if it is the first round:
 							if (round === 1) {
 								// go back to the landing page:
-								window.location.href = "/";
+								redirect("/LandingPage");
 							}
 
 							if (round > 1) setRound(round - 1);

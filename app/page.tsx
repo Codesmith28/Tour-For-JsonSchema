@@ -6,6 +6,7 @@ import { redirect, useRouter } from "next/navigation";
 import styles from "./styles/page.module.css";
 
 export default function Home() {
-	const router = useRouter();
-	router.push("/LandingPage");
+	// const router = useRouter();
+	// router.push("/LandingPage");
+	redirect("/LandingPage");
 }
