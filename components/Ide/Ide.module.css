@@ -17,6 +17,7 @@
 	width: 100%;
 	padding: 1em;
 	flex: 2;
+	font-weight: 500;
 }
 
 .run {
@@ -24,10 +25,6 @@
 	width: 100%;
 	justify-content: flex-end;
 	gap: 1em;
-}
-
-.outputTitle {
-	font-weight: 500;
 }
 
 .error {

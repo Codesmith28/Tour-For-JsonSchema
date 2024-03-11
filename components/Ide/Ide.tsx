@@ -127,9 +127,9 @@ const Ide = ({
 			<div className={styles.run}>
 				{validity && !isInvalid && (
 					<Button
-						bg={"hsl(var(--accent))"}
-						_hover={{ bg: "hsl(var(--primary), 0.9)" }}
-						_active={{ bg: "hsl(var(--primary))" }}
+						bg={"hsl(var(--approve), 0.8)"}
+						_hover={{ bg: "hsl(var(--approve), 0.9)" }}
+						_active={{ bg: "hsl(var(--approve))" }}
 						color={"hsl(var(--text2))"}
 						onClick={() => {
 							if (round < 2) {
