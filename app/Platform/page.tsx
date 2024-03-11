@@ -10,8 +10,12 @@ import styles from "./Platform.module.css";
 import problemStatements from "@/data/ProblemStatements.json";
 
 const Page = () => {
-	const [code, setCode] = useState("// Enter your code here... \n");
+	const [code, setCode] = useState("\n");
 	const [round, setRound] = useState(1);
+
+	// for the code to be valid:
+	const [validity, setValidity] = useState("");
+	const [isInvalid, setIsInvalid] = useState(false);
 
 	// get the problem statement for the current round
 	const problemStatement = problemStatements[round - 1];
@@ -42,8 +46,12 @@ const Page = () => {
 						title={problemStatement.title}
 						desc={problemStatement.desc}
 						hint={problemStatement.hint}
+						code1={problemStatement.code1}
+						exampleCode={problemStatement.exampleCode}
 						round={round}
 						setRound={setRound}
+						setValidity={setValidity}
+						setIsInvalid={setIsInvalid}
 					/>
 				</div>
 
@@ -53,6 +61,10 @@ const Page = () => {
 						setCode={setCode}
 						round={round}
 						setRound={setRound}
+						validity={validity}
+						setValidity={setValidity}
+						isInvalid={isInvalid}
+						setIsInvalid={setIsInvalid}
 					/>
 				</div>
 			</div>

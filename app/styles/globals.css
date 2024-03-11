@@ -2,9 +2,9 @@
 :root {
 	--text: 247, 75%, 5%;
 	--text2: 0, 0%, 100%;
-	--background: 240, 60%, 99%;
+	--background: 300, 3%, 94%;
+	--secondary: 240, 60%, 99%;
 	--primary: 243, 68%, 48%;
-	--secondary: 243, 100%, 93%;
 	--accent: 242, 100%, 62%;
 }
 
@@ -24,5 +24,6 @@ body {
 }
 ::-webkit-scrollbar-thumb {
 	background: hsl(var(--secondary));
+	border: 2px solid hsl(var(--text));
 	border-radius: 5px; /* Add rounded corners */
 }

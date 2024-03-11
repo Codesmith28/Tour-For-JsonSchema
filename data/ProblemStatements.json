@@ -1,17 +1,16 @@
 [
 	{
-		"title": "Problem 1",
-		"desc": "Description for Problem 1",
-		"hint": "Hint for Problem 1"
+		"title": "Step 1: Writing a valid schema",
+		"desc": "Write a schema that is valid for Draft 2020-12. For example, a schema that validates a string can be like:",
+		"hint": "A valid schema must have a $schema keyword, and it should conform to the JSON Schema specification.",
+		"code1": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"https://example.com/product.schema.json\",\n  \"title\": \"Product\",\n  \"description\": \"A product in the catalog\",\n  \"type\": \"object\"\n}",
+		"exampleCode": "{\n  \"$schema\": \"https://json-schema.org/draft/2020-12/schema\",\n  \"$id\": \"https://example.com/product.schema.json\",\n  \"title\": \"Product\",\n  \"description\": \"A product in the catalog\",\n  \"type\": \"object\"\n}"
 	},
 	{
-		"title": "Problem 2",
-		"desc": "Description for Problem 2",
-		"hint": "Hint for Problem 2"
-	},
-	{
-		"title": "Problem 3",
-		"desc": "Description for Problem 3",
-		"hint": "Hint for Problem 3"
+		"title": "Step 2: Validating an array of numbers",
+		"desc": "Create a schema that validates an array of numbers. The array can have any number of items like:",
+		"hint": "Use the 'type' keyword to specify the data type, and the 'items' keyword to define the array items.",
+		"code1": "{\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"number\"\n  }\n}",
+		"exampleCode": "[1, 2, 3, 4, 5, 6, 7]"
 	}
 ]

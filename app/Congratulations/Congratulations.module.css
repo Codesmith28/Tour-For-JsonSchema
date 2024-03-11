@@ -1,0 +1,11 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-weight: 500;
+	font-size: 1.5em;
+	gap: 1em;
+  text-align: center;
+}

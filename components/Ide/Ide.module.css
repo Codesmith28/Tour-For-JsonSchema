@@ -12,6 +12,7 @@
 .output {
 	border: 2px solid hsl(var(--text));
 	border-radius: 1em;
+	background-color: hsl(var(--secondary));
 	height: 100%;
 	width: 100%;
 	padding: 1em;
@@ -22,4 +23,17 @@
 	display: flex;
 	width: 100%;
 	justify-content: flex-end;
+	gap: 1em;
+}
+
+.outputTitle {
+	font-weight: 500;
+}
+
+.error {
+	color: red;
+}
+
+.success {
+	color: green;
 }
